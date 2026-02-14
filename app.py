@@ -23,7 +23,7 @@ app.secret_key = os.environ.get("SESSION_SECRET", "development-secret-key")
 CORS(app)
 
 # Google Gemini API setup
-api_key = os.getenv("GOOGLE_API_KEY", "AIzaSyBh0ad5gUxamAF_QtMLjE4hpxP5VDBqGcw")
+api_key = os.getenv("GOOGLE_API_KEY", "<API_KEY>")
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
 
 # Database setup
